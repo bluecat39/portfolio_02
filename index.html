@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+
+    <title>My Page</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style_header.css" />
+    <link rel="stylesheet" href="css/style_main01.css" />
+    <link rel="stylesheet" href="css/style_main02.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/humanity/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="header_logo">
+        <a href="#">
+          <i class="fas fa-utensils"></i>
+          食いしん坊!!
+        </a>
+      </h1>
+
+      <div id="hamburger">
+        <span class="inner_line" id="line1"></span>
+        <span class="inner_line" id="line2"></span>
+        <span class="inner_line" id="line3"></span>
+      </div>
+
+      <nav class="header_nav" id="js-headerNav">
+        <ul>
+          <li>
+            <a href="#rank">
+              <i class="far fa-calendar-check"></i>
+              人気
+            </a>
+          </li>
+          <li>
+            <a href="#category">
+              <i class="fas fa-border-all"></i>
+              カテゴリ
+            </a>
+          </li>
+          <li>
+            <a href="#top">
+              <i class="fas fa-home"></i>
+              トップ
+            </a>
+          </li>
+          <li>
+            <a href="#limited"> 期間<br />限定 </a>
+          </li>
+          <li>
+            <a href="#form"> お問い<br />合わせ </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="main-visual">
+        <div>
+          <video
+            src="video/ryori.mp4"
+            autoplay
+            muted
+            loop
+            poster=""
+            class="main-visual_video"
+          ></video>
+        </div>
+      </section>
+
+      <section class="rank wrapper" id="rank">
+        <h2 class="rank_title">人気メニュー</h2>
+        <div class="swiper rank_sliderbox">
+          <ul class="swiper-wrapper rank_sliderlist">
+            <li class="swiper-slide rank_item">
+              <p class="rank_num">第１位</p>
+              <a href="#">
+                <img src="image01/sushi8-r.jpg" alt="" />
+                <div class="rank_text">
+                  <span>カテゴリー</span>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                  <span>xxxx.xx.xx</span>
+                </div>
+              </a>
+            </li>
+            <li class="swiper-slide rank_item">
+              <p class="rank_num">第２位</p>
+              <a href="#">
+                <img src="image02/pizza4-r.jpg" alt="" />
+                <div class="rank_text">
+                  <span>カテゴリー</span>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                  <span>xxxx.xx.xx</span>
+                </div>
+              </a>
+            </li>
+            <li class="swiper-slide rank_item">
+              <p class="rank_num">第３位</p>
+              <a href="#">
+                <img src="image03/ramen1-r.jpg" alt="" />
+                <div class="rank_text">
+                  <span>カテゴリー</span>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                  <span>xxxx.xx.xx</span>
+                </div>
+              </a>
+            </li>
+            <li class="swiper-slide rank_item">
+              <p class="rank_num">第４位</p>
+              <a href="#">
+                <img src="image03/ramen4-r.jpg" alt="" />
+                <div class="rank_text">
+                  <span>カテゴリー</span>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                  <span>xxxx.xx.xx</span>
+                </div>
+              </a>
+            </li>
+            <li class="swiper-slide rank_item">
+              <p class="rank_num">第５位</p>
+              <a href="#">
+                <img src="image04/drink7-r.jpg" alt="" />
+                <div class="rank_text">
+                  <span>カテゴリー</span>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                  <span>xxxx.xx.xx</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="swiper-button-prev rank_prev"></div>
+        <div class="swiper-button-next rank_next"></div>
+
+        <div class="swiper-pagination"></div>
+      </section>
+
+      <section class="category wrapper" id="category">
+        <h2 class="category_title">カテゴリー別</h2>
+        <div class="category-tab" id="js-tab">
+          <div class="tab-nav">
+            <a href="#" class="tab-nav_item is-active" data-nav="0">お寿司</a>
+            <a href="#" class="tab-nav_item" data-nav="1">ピザ</a>
+            <a href="#" class="tab-nav_item" data-nav="2">麺類</a>
+            <a href="#" class="tab-nav_item" data-nav="3">飲み物</a>
+          </div>
+
+          <div class="tab-contents">
+            <div class="tab-contents_item" data-contents="0">
+              <a href="#" class="tab-contents_img">
+                <img src="image01/sushi1.jpg" alt="" />
+                <div class="tab-contents_text">
+                  <span>カテゴリー</span>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                  <span>xxxx.xx.xx</span>
+                </div>
+              </a>
+              <a href="#" class="tab-contents_img">
+                <img src="image01/sushi2-s.jpg" alt="" />
+                <div class="tab-contents_text">
+                  <span>カテゴリー</span>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                  <span>xxxx.xx.xx</span>
+                </div> </a
+              ><a href="#" class="tab-contents_img"
+                ><img src="image01/sushi3.jpg" alt="" />
+                <div class="tab-contents_text">
+                  <span>カテゴリー</span>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                  <span>xxxx.xx.xx</span>
+                </div> </a
+              ><a href="#" class="tab-contents_img"
+                ><img src="image01/sushi4.jpg" alt="" />
+                <div class="tab-contents_text">
+                  <span>カテゴリー</span>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                  <span>xxxx.xx.xx</span>
+                </div></a
+              ><a href="#" class="tab-contents_img"
+                ><img src="image01/sushi5.jpg" alt="" />
+                <div class="tab-contents_text">
+                  <span>カテゴリー</span>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                  <span>xxxx.xx.xx</span>
+                </div></a
+              ><a href="#" class="tab-contents_img"
+                ><img src="image01/sushi6.jpg" alt="" />
+                <div class="tab-contents_text">
+                  <span>カテゴリー</span>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                  <span>xxxx.xx.xx</span>
+                </div></a
+              ><a href="#" class="tab-contents_img"
+                ><img src="image01/sushi7.jpg" alt="" />
+                <div class="tab-contents_text">
+                  <span>カテゴリー</span>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                  <span>xxxx.xx.xx</span>
+                </div></a
+              ><a href="#" class="tab-contents_img"
+                ><img src="image01/sushi8-r.jpg" alt="" />
+                <div class="tab-contents_text">
+                  <span>カテゴリー</span>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                  <span>xxxx.xx.xx</span>
+                </div></a
+              >
+            </div>
+
+            <div class="tab-contents_item" data-contents="1">
+              <a href="#" class="tab-contents_img"
+                ><img src="image02/pizza1-s.jpg" alt="" />
+                <div class="tab-contents_text">
+                  <span>カテゴリー</span>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                  <span>xxxx.xx.xx</span>
+                </div></a
+              ><a href="#" class="tab-contents_img"
+                ><img src="image02/pizza2.jpg" alt="" />
+                <div class="tab-contents_text">
+                  <span>カテゴリー</span>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                  <span>xxxx.xx.xx</span>
+                </div></a
+              ><a href="#" class="tab-contents_img"
+                ><img src="image02/pizza3.jpg" alt="" />
+                <div class="tab-contents_text">
+                  <span>カテゴリー</span>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                  <span>xxxx.xx.xx</span>
+                </div></a
+              ><a href="#" class="tab-contents_img"
+                ><img src="image02/pizza4-r.jpg" alt="" />
+                <div class="tab-contents_text">
+                  <span>カテゴリー</span>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                  <span>xxxx.xx.xx</span>
+                </div></a
+              ><a href="#" class="tab-contents_img"
+                ><img src="image02/pizza5.jpg" alt="" />
+                <div class="tab-contents_text">
+                  <span>カテゴリー</span>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                  <span>xxxx.xx.xx</span>
+                </div></a
+              >
+            </div>
+
+            <div class="tab-contents_item" data-contents="2">
+              <a href="#" class="tab-contents_img"
+                ><img src="image03/ramen1-r.jpg" alt="" />
+                <div class="tab-contents_text">
+                  <span>カテゴリー</span>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                  <span>xxxx.xx.xx</span>
+                </div></a
+              >
+              <a href="#" class="tab-contents_img"
+                ><img src="image03/ramen2-s.jpg" alt="" />
+                <div class="tab-contents_text">
+                  <span>カテゴリー</span>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                  <span>xxxx.xx.xx</span>
+                </div></a
+              >
+              <a href="#" class="tab-contents_img"
+                ><img src="image03/ramen3.jpg" alt="" />
+                <div class="tab-contents_text">
+                  <span>カテゴリー</span>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                  <span>xxxx.xx.xx</span>
+                </div></a
+              >
+              <a href="#" class="tab-contents_img"
+                ><img src="image03/ramen4-r.jpg" alt="" />
+                <div class="tab-contents_text">
+                  <span>カテゴリー</span>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                  <span>xxxx.xx.xx</span>
+                </div></a
+              >
+              <a href="#" class="tab-contents_img"
+                ><img src="image03/ramen5.jpg" alt="" />
+                <div class="tab-contents_text">
+                  <span>カテゴリー</span>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                  <span>xxxx.xx.xx</span>
+                </div></a
+              >
+              <a href="#" class="tab-contents_img"
+                ><img src="image03/ramen6.jpg" alt="" />
+                <div class="tab-contents_text">
+                  <span>カテゴリー</span>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                  <span>xxxx.xx.xx</span>
+                </div></a
+              >
+            </div>
+
+            <div class="tab-contents_item" data-contents="3">
+              <a href="#" class="tab-contents_img"
+                ><img src="image04/drink1.jpg" alt="" />
+                <div class="tab-contents_text">
+                  <span>カテゴリー</span>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                  <span>xxxx.xx.xx</span>
+                </div></a
+              >
+              <a href="#" class="tab-contents_img"
+                ><img src="image04/drink2-s.jpg" alt="" />
+                <div class="tab-contents_text">
+                  <span>カテゴリー</span>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                  <span>xxxx.xx.xx</span>
+                </div></a
+              >
+              <a href="#" class="tab-contents_img"
+                ><img src="image04/drink3.jpg" alt="" />
+                <div class="tab-contents_text">
+                  <span>カテゴリー</span>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                  <span>xxxx.xx.xx</span>
+                </div></a
+              >
+              <a href="#" class="tab-contents_img"
+                ><img src="image04/drink4.jpg" alt="" />
+                <div class="tab-contents_text">
+                  <span>カテゴリー</span>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                  <span>xxxx.xx.xx</span>
+                </div></a
+              >
+              <a href="#" class="tab-contents_img"
+                ><img src="image04/drink5.jpg" alt="" />
+                <div class="tab-contents_text">
+                  <span>カテゴリー</span>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                  <span>xxxx.xx.xx</span>
+                </div></a
+              >
+              <a href="#" class="tab-contents_img"
+                ><img src="image04/drink6-s.jpg" alt="" />
+                <div class="tab-contents_text">
+                  <span>カテゴリー</span>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                  <span>xxxx.xx.xx</span>
+                </div></a
+              >
+              <a href="#" class="tab-contents_img"
+                ><img src="image04/drink7-r.jpg" alt="" />
+                <div class="tab-contents_text">
+                  <span>カテゴリー</span>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                  <span>xxxx.xx.xx</span>
+                </div></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="limited wrapper" id="limited">
+        <h2 class="limited_title">期間限定</h2>
+        <div class="limited_img-place">
+          <a href="#">
+            <img src="image03/ramen2-s.jpg" alt="" id="js-img-place" />
+          </a>
+        </div>
+        <div class="limited_imagebox">
+          <div class="limited_image">
+            <img src="image03/ramen2-s.jpg" alt="" data-img="1" />
+          </div>
+          <div class="limited_image">
+            <img src="image01/sushi2-s.jpg" alt="" data-img="2" />
+          </div>
+          <div class="limited_image">
+            <img src="image02/pizza1-s.jpg" alt="" data-img="3" />
+          </div>
+          <div class="limited_image">
+            <img src="image04/drink2-s.jpg" alt="" data-img="4" />
+          </div>
+          <div class="limited_image">
+            <img src="image04/drink6-s.jpg" alt="" data-img="5" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="form">
+      <h2 class="form_title" id="form">ご予約はこちら</h2>
+      <form
+        action=""
+        method="post"
+        name="reservartion-form"
+        class="form_reservation wrapper"
+      >
+        <dl>
+          <dt>
+            <label for="rf-name" class="form-label"> お名前</label>
+            <span>必須</span>
+          </dt>
+          <dd>
+            <input type="text" name="name" id="rf-name" class="form-control" />
+            <span class="reservation-alert" date-alert="alert1">この項目は入力必須です。</span>
+          </dd>
+          <dt><label for="rf-phone" class="form-label"> 電話番号 </label></dt>
+          <dd>
+            <input
+              type="tel"
+              name="phone-number"
+              id="rf-phone"
+              class="form-control"
+            />
+            <span class="reservation-alert" date-alert="alert2">正しく入力されていません。 例）01234567910</span>
+          </dd>
+          <dt>
+            <label for="rf-mail" class="form-label"> メールアドレス</label>
+            <span>必須</span>
+          </dt>
+          <dd>
+            <input type="email" name="mail" id="rf-mail" class="form-control" />
+            <span class="reservation-alert" date-alert="alert3">正しいメールアドレスの形式ではありません。</span>
+          </dd>
+          <dt>
+            <label for="js-rf-date" class="form-label"> 予約日 </label>
+            <span>必須</span>
+          </dt>
+          <dd>
+            <input
+              type="text"
+              name="date"
+              readonly="readonly"
+              id="js-rf-date"
+              class="form-control"
+            />
+            <style>
+              #ui-datepicker-div {
+                vertical-align: middle;
+              }
+            </style>
+            <span>日</span>
+            <input
+              type="time"
+              name="date-time"
+              id="rf-date-time"
+              class="form-control"
+            />
+            <span>時頃</span>
+            <span class="reservation-alert" date-alert="alert4">この項目は入力必須です。</span>
+          </dd>
+          <dt>
+            <label for="rf-persons" class="form-label"> ご来店人数 </label>
+            <span>必須</span>
+          </dt>
+          <dd>
+            <input
+              type="number"
+              name="persons"
+              id="rf-persons"
+              class="form-control"
+            />
+            <span>名</span>
+            <span class="reservation-alert" date-alert="alert5">この項目は入力必須です。</span>
+          </dd>
+          <dt class="seat-dt">
+            お席のご希望
+            <span>必須</span>
+          </dt>
+          <dd class="seat-dd">
+            <input type="radio" name="seat" value="table-seat" checked id="rf-seat-1" onclick="mainAndFooter.seatDescript()"/>
+            <label for="rf-seat-1">テーブル席</label>
+            <br />
+            <input type="radio" name="seat" value="counter-seat" id="rf-seat-2" onclick="mainAndFooter.seatDescript()"/>
+            <label for="rf-seat-2">カウンター席</label>
+            <span class="reservation-alert">この項目は入力必須です。</span>
+          </dd>
+        </dl>
+
+        <p class="form_description-1" id="js-formDescription">
+          ※カウンター席をご希望の方は、最大で6名様までのご予約となります。<br />
+          6名様を超える場合は、テーブル席へのご案内をさせて頂くことがあります。<br />
+          ご理解のほど宜しくお願い致します。
+          <br />
+        </p>
+        <p class="form_description-2">
+          予約の確認ができ次第メールにてお知らせ致します。<br />
+          <br />
+          【店舗情報】<br />
+          店舗名：〇△◇✕〇△◇✕ <br />
+          住所：〒〇△◇-1234 <br />
+          電話番号：000-〇△◇✕-0000 <br />
+        </p>
+        <input
+          type="button"
+          value="上記の内容で予約"
+          class="form_button"
+          id="js-formButton"
+        />
+      </form>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/b1a0a68804.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/index01.js"></script>
+    <script src="js/index02.js"></script>
+  </body>
+</html>
